@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >= 0.7.0 < 0.9.0;
 
-contract gas{
+contract gas {
 	/*
 	* 1 ether = 10^9 Gwei = 10^18 wei
 	* 0.000000000000000001 = 1^-18 = 1 wei
