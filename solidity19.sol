@@ -3,7 +3,7 @@ pragma solidity >= 0.7.0 < 0.9.0;
 
 /*
  * Mapping과 Array 사용 시 주의할 점
- * 아래 컨트랙트에서 changeNum() 함수로는 mapping과 array의 값을 바꿀 수 없다.
+ * 아래 컨트랙트에서 changeNum() 함수로는 mapping과 array의 값을 변경할 수 없다.
  * 왜냐하면 num의 reference로 저장하는게 아니라, 그 당시 값만 캡쳐해서 들고 오기 때문이다.
  * 따라서 값 변경을 위해서는 각각의 update 함수를 통해 변경해야한다.
  */
