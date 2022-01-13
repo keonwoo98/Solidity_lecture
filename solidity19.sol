@@ -8,40 +8,40 @@ pragma solidity >= 0.7.0 < 0.9.0;
  * 따라서 값 변경을 위해서는 각각의 update 함수를 통해 변경해야한다.
  */
 
- contract caution {
-	 uint256 num = 42;
-	 mapping(uint256 => uint256) numMap;
-	 uint256[] numArray;
+contract caution {
+	uint256 num = 42;
+	mapping(uint256 => uint256) numMap;
+	uint256[] numArray;
 
-	 function changeNum(uint256 _num) public {
-		 num = _num;
-	 }
+	function changeNum(uint256 _num) public {
+		num = _num;
+	}
 
-	 function showNum() public view returns(uint256) {
-		 return num;
-	 }
+	function showNum() public view returns(uint256) {
+		return num;
+	}
 
-	 function numMapAdd() public {
-		 numMap[0] = num;
-	 }
+	function numMapAdd() public {
+		numMap[0] = num;
+	}
 
-	 function showNumMap() public view returns(uint256) {
-		 return numMap[0];
-	 }
+	function showNumMap() public view returns(uint256) {
+		return numMap[0];
+	}
 
-	 function UpdateMap() public {
-		 numMap[0] = num;
-	 }
+	function UpdateMap() public {
+		numMap[0] = num;
+	}
 
-	 function numArrayAdd() public {
-		 numArray.push(num);
-	 }
+	function numArrayAdd() public {
+		numArray.push(num);
+	}
 
-	 function showNumArray() public view returns(uint256) {
-		 return numArray[0];
-	 }
+	function showNumArray() public view returns(uint256) {
+		return numArray[0];
+	}
 
-	 function updateArray() public {
-		 numArray[0] = num;
-	 }
- }
+	function updateArray() public {
+		numArray[0] = num;
+	}
+}
